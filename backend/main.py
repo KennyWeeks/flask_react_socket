@@ -6,7 +6,8 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 
 @socketio.on("connection")
 def idk():
-    print("BITCH")
+    print("I just wnat to run this to see what is going on")
+    socketio.emit("message", "sup")
     pass
 
 @socketio.on("my event")
